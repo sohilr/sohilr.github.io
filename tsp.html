@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sohil's Portfolio Website</title>
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+		<script src="https://kit.fontawesome.com/7ef118ddb3.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="web.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="web.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="web.html#work" class="nav__link">Portfolio</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				<strong>Traveling Salesman Problem</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Written in C++</p>
+			<img src="TSP.png" alt="" class="intro__img">
+		</section>
+		
+		<div class="portfolio-item-individual">
+            <p></p>
+            In this project I found the minimum spanning tree, using Prim's algorithm, and completed the traveling salesman problem for a 
+			set of given coordinates. I completed the tsp (traveling salesman problem) in a fast manner (O(n^2) time) using a heuristic
+			called "farthest insertion". In this algorithm, I found the furthest point away from the current point I was looking at, 
+			then connected them in the least expensive way possible. I also completed the tsp in the most optimal way using a 
+			branch and bound algorithm. In this algorithm I added points to make each possible cycle, but if I deemed a cycle to not
+			be "promising" I would strop exploring that path. In order to determine if a possible cycle was promising, I would add
+			a minimum spanning tree to the current point I was at and determine if this distance was lower than my current best distance
+			or not. This algorithm can be quite slow in the worst case (O(n!) time), but in practice it does much better because many
+			of the possible cycles get marked "not promising" and I don't have to explore them. 
+        </div>
+		
+		<!-- Footer -->
+		<footer>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="mailto:sohilr@umich.edu">
+						<i class="fa-solid fa-envelope"></i>
+					</a></li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/sohil-ramachandra-026374222">
+						<i class="fa-brands fa-linkedin"></i>
+					</a></li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/sohilr">
+						<i class="fa-brands fa-github"></i>
+					</a></li>
+			</ul>
+		</footer>
+		
+		<script src="index.js"></script>
+
+	</body>
+</html>

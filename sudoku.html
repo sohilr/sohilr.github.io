@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sohil's Portfolio Website</title>
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+		<script src="https://kit.fontawesome.com/7ef118ddb3.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="web.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="web.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="web.html#work" class="nav__link">Portfolio</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				<strong>Sudoku Solver</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Written in C++</p>
+			<img src="sudoku.svg.png" alt="" class="intro__img">
+		</section>
+		
+		<div class="portfolio-item-individual">
+            <p></p>
+            In this project I used a backtracking algorithm to solve any sudoku puzzle. If there is a valid solution,
+			the algorithm will output it and if not the algorithm will output "No solution". 
+
+			The code can be found <a href="https://github.com/sohilr/sudoku">here</a>.
+        </div>
+		
+		<!-- Footer -->
+		<footer>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="mailto:sohilr@umich.edu">
+						<i class="fa-solid fa-envelope"></i>
+					</a></li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/sohil-ramachandra-026374222">
+						<i class="fa-brands fa-linkedin"></i>
+					</a></li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/sohilr">
+						<i class="fa-brands fa-github"></i>
+					</a></li>
+			</ul>
+		</footer>
+		
+		<script src="index.js"></script>
+
+	</body>
+</html>
